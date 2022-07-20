@@ -29,5 +29,5 @@ sample_text:str = """The spreadsheet contains information about the Vehicle Iden
 keyword:str = 'VIN'
 search_phrase:str = r'\s' + '\(' + keyword + '\)'
 
-finding:list = re.findall(search_phrase, text)
+finding:list = re.findall(search_phrase, sample_text)
 print(finding)
