@@ -24,7 +24,7 @@ word:str = sample_text[start:end]
 print(word)
 
 # COMBINE THE KEYWORD WITH ADDITIONAL CHARACTERS INTO A SEARCH PHRASE:
-sample_text:str = ""The spreadsheet contains information about the Vehicle Identification Number (VIN)."
+sample_text:str = """The spreadsheet contains information about the Vehicle Identification Number (VIN)."""
 
 keyword:str = 'VIN'
 search_phrase:str = r'\s' + '\(' + keyword + '\)'
