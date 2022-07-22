@@ -22,7 +22,7 @@ search_string = 's\w\w\w\wr'
 findings = re.findall(search_string, sample_text)
 print(findings) # returns ['summer']
 
-# .*? matches any character until the escape character
+# .*? matches any character until the escape character (? for non-greedy matching
 search_string = 'b.*?s'
 findings = re.findall(search_string, sample_text)
 print(findings) # returns ['buildings']
