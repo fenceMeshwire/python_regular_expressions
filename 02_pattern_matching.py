@@ -12,12 +12,17 @@ the modern church steeple of the downtown district had not yet struck
 seven, when the side door of one of the small buildings closed and a woman
 came out into the silent street."""
 
-# . matches any character
+# . matches any character for each dot
 search_string = 's....r'
 findings = re.findall(search_string, sample_text)
 print(findings) # returns ['summer']
 
-# \w matches alphanumeric characters: [0-9a-zA-Z_]
+# \w matches alphanumeric characters: [0-9a-zA-Z_] for each \w
 search_string = 's\w\w\w\wr'
 findings = re.findall(search_string, sample_text)
 print(findings) # returns ['summer']
+
+# .*? matches any character until the escape character
+search_string = 'b.*?s'
+findings = re.findall(search_string, sample_text)
+print(findings) # returns ['buildings']
