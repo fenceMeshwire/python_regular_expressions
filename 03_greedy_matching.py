@@ -6,3 +6,9 @@
 
 # Dependency
 import re
+
+greedy_matching = re.compile(r'(Go){3,6}')
+result = greedy_matching.search('GoGoGoGoGoGoGoGoGoGo')
+result.group()
+
+# 'GoGoGoGoGoGo' -> 6x 'Go'
