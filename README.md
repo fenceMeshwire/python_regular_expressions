@@ -3,4 +3,5 @@
 <p>Contents:</p>
 <ol>
   <li>Exact matching: 01_exact_matching.py</li>
+  <li>Pattern matching: 02_pattern_matching.py</li>
 </ol>
