@@ -6,6 +6,7 @@
 
 # Dependencies
 import re
+from datetime import datetime
 
 # Sample text:
 text = 'first_text_22-08-2022_text_after_date'
@@ -35,3 +36,8 @@ text_after = match_order.group(8)
 
 # Print the result
 print(day, month, year)
+
+# Convert the result to a date
+str_date = day + '.' + month + '.' + year
+date = datetime.strptime(str_date, '%d.%m.%Y')
+print(date)
