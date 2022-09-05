@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# substitute_rearrange.py
+# 07_substitute_rearrange.py
 
 # Dependency
 import re
