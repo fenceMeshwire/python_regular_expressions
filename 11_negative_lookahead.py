@@ -13,4 +13,4 @@ samples = ['AB34', '3410']
 
 result = [samples[i] for i in range(len(samples)) if re.match(undesired, samples[i])]
 
-print(result)
+print(result) # ['AB34']
